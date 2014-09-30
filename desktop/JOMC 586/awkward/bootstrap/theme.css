@@ -1,0 +1,15 @@
+.jumbotron h1{
+    color: #56A0D3;
+}
+
+.jumbotron {
+    background-color: black;
+}
+
+.btn-default {
+    background: pink;
+}
+
+.page-header {
+    margin-top: 70px;
+}

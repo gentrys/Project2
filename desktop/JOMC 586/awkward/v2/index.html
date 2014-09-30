@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Awkward Showcase - Demo #1</title>
+<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="style.showcase.css" />
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.showcase.js"></script>
+<script type="text/javascript">
+ 
+$(document).ready(function() {
+
+	$('#showcase').showcase();
+});
+
+</script>
+</head>
+<body>
+
+<div class="menu">
+	<a href="index.html" class="active">Demo #1</a> (Normal) | 
+	<a href="index2.html">Demo #2</a> (Vertical thumnbails) | 
+	<a href="index3.html">Demo #3</a> (Horizontal thumbnails) | 
+	<a href="index4.html">Demo #4</a> (Dynamic height) | 
+	<a href="index5.html">Demo #5</a> (Hundred percent) | 
+	<a href="index6.html">Demo #6</a> (Viewline)
+</div>
+
+<div class="container">
+
+	<!-- This is the button used to switch between one page and slideshow. -->
+	<p><a href="#showcase" data-showcase-toggle="#showcase"><span class="view-page">View as one page</span><span class="view-slide">View as slideshow</span></a></p>
+
+	<div id="showcase" class="showcase">
+		<!-- Each child div in #showcase represents a slide -->
+		<div class="showcase-slide">
+			<!-- Put the slide content in a div with the class .showcase-content -->
+			<div class="showcase-content">
+				<h1>You can put what ever you want<br/>in this sliding machine!</h1>
+				<h2>Let's start with an image...</h2>
+				<p><em>pssst.. you can use the arrow keys to navigate.</em></p>
+			</div>
+		</div>
+		<!-- Each child div in #showcase represents a slide -->
+		<div class="showcase-slide">
+			<!-- Put the slide content in a div with the class .showcase-content. -->
+			<div class="showcase-content">
+				<img src="images/01.jpg" alt="01" />
+			</div>
+		</div>
+		<!-- Each child div in #showcase represents a slide -->
+		<div class="showcase-slide">
+			<!-- Put the slide content in a div with the class .showcase-content. -->
+			<div class="showcase-content">
+				<h1>Now let's add a caption for the content...</h1>
+			</div>
+		</div>
+		<!-- Each child div in #showcase represents a slide -->
+		<div class="showcase-slide">
+			<!-- Put the slide content in a div with the class .showcase-content. -->
+			<div class="showcase-content">
+				<img src="images/03.jpg" alt="03" />
+			</div>
+			<!-- Put the caption content in a div with the class .showcase-caption -->
+			<div class="showcase-caption">
+				It's a flying wasp. <a href="http://www.flickr.com/photos/14516334@N00/345009210/">Photo from flickr</a>
+			</div>
+		</div>
+		<!-- Each child div in #showcase represents a slide -->
+		<div class="showcase-slide">
+			<!-- Put the slide content in a div with the class .showcase-content. -->
+			<div class="showcase-content">
+				<h1>If you want, you can mark up the<br/>content with some toolstips...</h1>
+			</div>
+		</div>
+		<!-- Each child div in #showcase represents a slide -->
+		<div class="showcase-slide">
+			<!-- Put the slide content in a div with the class .showcase-content. -->
+			<div class="showcase-content">
+				<img src="images/02.jpg" alt="02" />
+			</div>
+			<!-- Put the tooltips in a div with the class .showcase-tooltips. -->
+			<div class="showcase-tooltips">
+				<!-- Each anchor in .showcase-tooltips represents a tooltip. The coords attribute represents the position of the tooltip. -->
+				<a href="http://www.awkward.se" coords="634,130">
+					<!-- The content of the anchor-tag is displayed in the tooltip. -->
+					This is a tooltip that displays the anchor html in a nice way.
+				</a>
+				<a href="http://www.awkward.se" coords="200,440">
+					This is a tooltip that displays the anchor html in a nice way.
+				</a>
+				<a href="http://www.awkward.se" coords="600,440">
+					This is a tooltip that displays the anchor html in a nice way.
+				</a>
+				<a href="http://www.awkward.se" coords="356, 172">
+					<!-- You can add multiple elements to the anchor-tag which are displayed in the tooltip. -->
+					<img src="images/glasses.png" />
+					<span style="display: block; font-weight: bold; padding: 3px 0 3px 0; text-align: center;">
+						White Glasses: 500$
+					</span>
+				</a>
+			</div>
+		</div>
+		<!-- Each child div in #showcase represents a slide -->
+		<div class="showcase-slide">
+			<!-- Put the slide content in a div with the class .showcase-content. -->
+			<div class="showcase-content">
+				<div class="showcase-content-wrapper">
+					<h1>Now let's watch a video...</h1>
+				</div>
+			</div>
+		</div>
+		<!-- Each child div in #showcase represents a slide -->
+		<div class="showcase-slide">
+			<!-- Put the slide content in a div with the class .showcase-content. -->
+			<div class="showcase-content">
+				<iframe src="http://player.vimeo.com/video/1185346?title=0&amp;byline=0&amp;portrait=0" width="700" height="470" frameborder="0"></iframe>
+			</div>
+		</div>
+		<!-- Each child div in #showcase represents a slide -->
+		<div class="showcase-slide">
+			<!-- Put the slide content in a div with the class .showcase-content. -->
+			<div class="showcase-content">
+				<h1>Yey! It's an infinity slide...<br/>It never goes left when clicking right!</h1>
+			</div>
+		</div>
+	</div>
+		
+</div>
+
+<div style="text-align: center; margin-top: 50px;">
+	<a href="http://www.awkwardgroup.com/sandbox/awkward-showcase-a-jquery-plugin">
+		Click here to download and learn more about this jQuery plugin.
+	</a>
+</div>
+
+</body>
+</html>

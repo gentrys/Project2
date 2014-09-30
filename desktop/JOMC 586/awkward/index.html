@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Beginners Guide to Golf </title>
+
+
+     
+<link href="bootstrap/bootstrap.min.css" rel="stylesheet" media="screen">
+
+<link href="bootstrap/style.css" rel="stylesheet" media="screen">
+
+<link rel="stylesheet" href="css/style.css" />
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.aw-showcase.js"></script>
+<script src="newsquiz-master/js/tabletop.js"></script>
+<script src="newsquiz-master/js/newsquiz.min.js"></script> 
+<script type="text/javascript">
+ 
+function loadQuiz(){
+	console.log("loadQuiz()");
+	$('#quiz_container').quiz('0Avdg0INPVdukdGVKbi1WRVBjbWdBZW5NU2N1VUt0SWc');
+
+} 
+ 
+$(document).ready(function()
+{
+	$("#showcase").awShowcase(
+	{
+		content_width:			700,
+		content_height:			470,
+		fit_to_parent:			false,
+		auto:					true,
+		interval:				15000,
+		continuous:				false,
+		loading:				true,
+		tooltip_width:			200,
+		tooltip_icon_width:		32,
+		tooltip_icon_height:	32,
+		tooltip_offsetx:		18,
+		tooltip_offsety:		0,
+		arrows:					true,
+		buttons:				true,
+		btn_numbers:			true,
+		keybord_keys:			true,
+		mousetrace:				false, /* Trace x and y coordinates for the mouse */
+		pauseonover:			true,
+		stoponclick:			false,
+		transition:				'hslide', /* hslide/vslide/fade */
+		transition_delay:		0,
+		transition_speed:		500,
+		show_caption:			'onload', /* onload/onhover/show */
+		thumbnails:				false,
+		thumbnails_position:	'outside-last', /* outside-last/outside-first/inside-last/inside-first */
+		thumbnails_direction:	'vertical', /* vertical/horizontal */
+		thumbnails_slidex:		1, /* 0 = auto / 1 = slide one thumbnail / 2 = slide two thumbnails / etc. */
+		dynamic_height:			false, /* For dynamic height to work in webkit you need to set the width and height of images in the source. Usually works to only set the dimension of the first slide in the showcase. */
+		speed_change:			true, /* Set to true to prevent users from swithing more then one slide at once. */
+		viewline:				false, /* If set to true content_width, thumbnails, transition and dynamic_height will be disabled. As for dynamic height you need to set the width and height of images in the source. */
+		custom_function:		loadQuiz() /* Define a custom function that runs on content change */
+	});
+	
+	
+});
+
+
+
+
+</script>
+</head>
+<body>
+
+<div style="width: 700px; margin: auto;">
+
+
+	<div id="showcase" class="showcase">
+		<!-- Each child div in #showcase represents a slide -->
+		<div class="showcase-slide">
+			<!-- Put the slide content in a div with the class .showcase-content -->
+			<div class="showcase-content">
+				<!-- If the slide contains multiple elements you should wrap them in a div with the class .showcase-content-wrapper. 
+				We usually wrap even if there is only one element, because it looks better. :-) -->
+				<div class="showcase-content">
+					<img src="images/golf-title.png" alt="golf title" />
+				</div>
+				
+			</div>
+		</div>
+		<!-- Each child div in #showcase represents a slide -->
+		<div class="showcase-slide">
+			<!-- Put the slide content in a div with the class .showcase-content. -->
+			<div class="showcase-content">
+				<img src="images/golf.png" alt="golf intro" />
+			</div>
+			<div class="showcase-caption">
+				<h1> Introduction </h1>
+				<p> Golf is a game of highs and lows, elation and despair, and the constant pain of having to master the smallest of elements. And it all begins with a successful tee-shot. That is where this online beginner&#39;s guide comes in; whether you aren&#39;t getting the right yardage or if you have never held a club in your life, here is some advice on how to get those most out of your tee shot. 
+ </p>
+			</div>
+		</div>
+		<!-- Each child div in #showcase represents a slide -->
+		<div class="showcase-slide">
+			<!-- Put the slide content in a div with the class .showcase-content. -->
+			<div class="showcase-content">
+				<img src="images/golf-stance.png" alt="golf stance" />
+				<div class="showcase-caption">
+					<h1> Stance </h1>
+					<p> Stance is an often-overlooked element in the golf swing despite its importance. It is vital in stabilizing and balancing your entire body. While working on your swing you may notice that certain shots require changing your balance and feet position. For now, focus on an athletic, even, balanced stance.  </p>
+				</div>
+			</div>
+			<div class="showcase-tooltips">
+				<!-- Each anchor in .showcase-tooltips represents a tooltip. The coords attribute represents the position of the tooltip. -->
+				<a href="http://www.awkward.se" coords="360,300">
+					<!-- The content of the anchor-tag is displayed in the tooltip. -->
+					Don&#39;t be stiff through your legs. Make sure to keep your knees slightly bent.
+				</a>
+				<a href="http://www.awkward.se" coords="150,340">
+					Keep your feet shoulder width apart. Anything else may rob you of your power and balance.
+				</a>
+				<a href="http://www.awkward.se" coords="340,360">
+					Distribute your weight evenly on both feet. Make sure to balance your weight in the middle of your foot, although you may want to stand back on your heels or balance on the balls of your feet.
+				</a>
+			</div>
+		</div>
+		<!-- Each child div in #showcase represents a slide -->
+		<div class="showcase-slide">
+			<!-- Put the slide content in a div with the class .showcase-content. -->
+			<div class="showcase-content">
+				<img src="images/golf-grip.png" alt="golf grip" />
+			</div>
+			<!-- Put the caption content in a div with the class .showcase-caption -->
+			<div class="showcase-caption">
+				<h1> Grip </h1>
+				<p> What is the proper grip? There is no truly right answer seeing as even the pros use different grips. The most important thing is that he/she delivers the clubface squarely to the ball with maximum speed that is correct and proper. Here we will show you the interlocking grip, known for its stability and for being used by Tiger Woods, Rory Mcilroy, and Jack Nicklaus.  </p>
+			</div>
+			<div class="showcase-tooltips">
+				<!-- Each anchor in .showcase-tooltips represents a tooltip. The coords attribute represents the position of the tooltip. -->
+				<a href="http://www.awkward.se" coords="360,140">
+					<!-- The content of the anchor-tag is displayed in the tooltip. -->
+					To get the interlocking grip hold the club like it is a baseball. Then fit the left index finger between the joint of the right pinky and ring fingers while taking the pinky and fitting it between the left index and middle fingers.
+				</a>
+				<a href="http://www.awkward.se" coords="90,200">
+					Be sure to hold the club with a relaxed grip. This allows the club to turn over when you swing which gives you better distance and accuracy.
+				</a>
+			</div>
+		</div>
+		<!-- Each child div in #showcase represents a slide -->
+		<div class="showcase-slide">
+			<!-- Put the slide content in a div with the class .showcase-content. -->
+			<div class="showcase-content">
+				<div class="showcase-content-wrapper">
+					<img src="images/golf-backswing.png" alt="golf backswing" />
+				</div>
+				<div class="showcase-caption">
+					<h1> Backswing </h1>
+					<p> Although it is the slowest part of your swing, the backswing is vital to making a good shot. It sets you up for the downswing, the strike and the follow through. If any part is out of alignment you are unlikely to make a well-made shot. Therefore, be sure to put just as much work into the backswing as the downswing even if it does not have that rewarding ball impact. </p>
+				</div>	
+			</div>
+			<div class="showcase-tooltips">
+				<!-- Each anchor in .showcase-tooltips represents a tooltip. The coords attribute represents the position of the tooltip. -->
+				<a href="http://www.awkward.se" coords="130,240">
+					<!-- The content of the anchor-tag is displayed in the tooltip. -->
+					Allow a slight wrist break as your arm becomes parallel to the ground.
+				</a>
+				<a href="http://www.awkward.se" coords="180,190">
+					Move your hands straight back while simultaneously keeping them close to your back leg. Be sure to keep your front arm straight while doing this. 
+				</a>
+				<a href="http://www.awkward.se" coords="360,220">
+					Rotate your torso so that the club head travels behind your hands. Your front arm should bend slightly.
+				</a>
+			</div>
+		</div>
+		<!-- Each child div in #showcase represents a slide -->
+		<div class="showcase-slide">
+			<!-- Put the slide content in a div with the class .showcase-content. -->
+			<div class="showcase-content">
+				<img src="images/golf-downswing.png" alt="golf downswing" />
+				<div class="showcase-caption">
+					<h1> Downswing </h1>
+					<p> The downswing is arguably the most crucial and frustrating area of the swing.  Crucial due to its effect on the aim and trajectory of the ball and frustrating because not matter how perfect what came before it was, it can make or break your entire shot. Through the downswing, we can uncover some of the most common and devastating flaws in golf.  </p>
+				</div>	
+			</div>
+			<!-- Put the tooltips in a div with the class .showcase-tooltips. -->
+			<div class="showcase-tooltips">
+				<!-- Each anchor in .showcase-tooltips represents a tooltip. The coords attribute represents the position of the tooltip. -->
+				<a href="http://www.awkward.se" coords="400,210">
+					<!-- The content of the anchor-tag is displayed in the tooltip. -->
+					Just as it was when you started your backswing, lock your front arm so that it is completely straight right before impact.
+				</a>
+				<a href="http://www.awkward.se" coords="85,220">
+					When you swing down you should allow the club head to lag behind. This increases the 90 degree forearm to shaft angle, giving you massive club speed while allowing your body to move slowly. 
+				</a>
+				<a href="http://www.awkward.se" coords="190,310">
+					Keep your front knee flexed and allow your knees to move toward your target.
+				</a>
+			</div>
+		</div>
+		<!-- Each child div in #showcase represents a slide -->
+		<div class="showcase-slide">
+			<!-- Put the slide content in a div with the class .showcase-content. -->
+			<div class="showcase-content">
+				<div class="showcase-content-wrapper">
+					<img src="images/golf-followthru.png" alt="golf follow through" />
+				<div class="showcase-caption">
+					<h1> Follow Through </h1>
+					<p> One of the biggest things to understand is that you should not try to pummel the ball with all of your strength; you are not trying to hit a homerun. When trying to achieve distance and direction, the most important factor is form. When you try to put all your strength into hitting the ball, good form is usually sacrificed.  </p>
+				</div>	
+				</div>
+			</div>
+			<div class="showcase-tooltips">
+				<!-- Each anchor in .showcase-tooltips represents a tooltip. The coords attribute represents the position of the tooltip. -->
+				<a href="http://www.awkward.se" coords="390,230">
+					<!-- The content of the anchor-tag is displayed in the tooltip. -->
+					Your belt buckle should be facing the target if you release the club correctly and follow through completely. 
+				</a>
+				<a href="http://www.awkward.se" coords="60,380">
+					The club should end up behind you with you balanced on your lead foot and your back foot on its toe. 
+				</a>
+			</div>
+		</div>
+		
+		
+		<div class="showcase-slide">
+			<!-- Put the slide content in a div with the class .showcase-content. -->
+			<div class="showcase-content">
+				<iframe src="quiz.html"></iframe></div>
+					
+			</div>
+			
+		</div>
+		
+			
+	</div>	
+</div>
+	<div class="credits"> 
+	<p> Graphics by Gentry Sanders </p>
+	<p> Soucres: golf-info-guide.com, perfectgolfswingreview.net, and pga.com </p>
+	</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+/* Showcase
+
+
+/* This class is removed after the showcase is loaded */
+/* Assign the correct showcase height to prevent loading jumps in IE */
+.showcase-load
+{
+	height: 470px; /* Same as showcase javascript option */
+	overflow: hidden;
+}
+
+/* Container when content is shown as one page */
+.showcase-onepage
+{
+	/**/
+}
+
+/* Container when content is shown in slider */
+.showcase {
+
+	overflow: hidden;
+	position: relative;
+}
+	
+	/* Navigation Arrows */
+	.showcase .arrow-previous, .showcase .arrow-next {
+		
+		position: absolute;
+		background: url('images/arrows.png');
+		width: 33px;
+		height: 33px;
+		top: 220px;
+		cursor: pointer;
+	}
+	
+	.showcase .arrow-previous {
+	
+		left: -60px;
+	}
+	
+		.showcase .arrow-previous:hover {
+		
+			background-position: 0px -34px;
+		}
+	
+	.showcase .arrow-next {
+	
+		right: -56px;
+		background-position: -34px 0;
+	}
+	
+		.showcase .arrow-next:hover {
+		
+			background-position: -34px -34px;
+		}
+	
+	/* Showcase Slides */
+	.showcase .showcase-slide {
+
+		float: left;
+	}
+
+/* Clear (used for horizontal thumbnails)
+-------------------------------------------*/
+
+.clear
+{
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+	float: none;
+}
+
